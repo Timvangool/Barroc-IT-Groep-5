@@ -1,0 +1,11 @@
+q:\documenten\visual studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.exe.config
+q:\documenten\visual studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.Properties.Resources.resources
+q:\documenten\visual studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.csproj.GenerateResource.Cache
+q:\documenten\visual studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.exe
+q:\documenten\visual studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.pdb
+q:\documenten\visual studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.exe
+q:\documenten\visual studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.pdb
+Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmLogin.resources
+Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT.mdf
+Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT_log.ldf
+Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmMenu.resources
