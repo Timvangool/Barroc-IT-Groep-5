@@ -9,3 +9,16 @@ Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programm
 Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT.mdf
 Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT_log.ldf
 Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmMenu.resources
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.exe.config
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.exe
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.pdb
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT.mdf
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT_log.ldf
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.exe
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.pdb
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.csprojResolveAssemblyReference.cache
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmLogin.resources
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmMenu.resources
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.Properties.Resources.resources
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.csproj.GenerateResource.Cache
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.Launcher.resources

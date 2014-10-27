@@ -17,7 +17,7 @@ namespace Barroc_IT_Programma
 
         public DatabaseHandler()
         {
-            con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\Barroc-IT.mdf;Integrated Security=True;Connect Timeout=30");
+            con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\Barroc-IT.mdf;Integrated Security=True;Connect Timeout=30");
         }
 
         public void TestConnection()
