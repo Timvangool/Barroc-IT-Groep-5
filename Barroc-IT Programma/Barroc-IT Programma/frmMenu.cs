@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
+using System.Data.SqlServerCe;
 
 namespace Barroc_IT_Programma
 {
@@ -20,25 +21,49 @@ namespace Barroc_IT_Programma
         {
             InitializeComponent();
             dbh = new DatabaseHandler();
-            permissions();
-
-            
         }
-        public void permissions()
+        public bool permissions()
         {
+            dbh.TestConnection();
+            dbh.OpenCon();
             bool admin = false;
-            using (SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [Table] WHERE Permisions = 4", dbh.Getcon()))
+            string user = lbl_user.Text;
+            int permissionValue = 0;
+            string sql = "SELECT * FROM  tbl_Account WHERE Username = @user";
+            SqlCommand cmd = new SqlCommand(sql, dbh.Getcon());
+            cmd.Parameters.Add(new SqlParameter("user", user));
+            SqlDataReader rdr = cmd.ExecuteReader();
+            while (rdr.Read())
             {
-                admin = (int)cmd.ExecuteScalar() > 0;
+                permissionValue = rdr.GetInt32(3);
             }
-          
-            if (admin)
+            if (permissionValue == 4)
             {
-                
+                admin = true;
+            }
+            dbh.CloseCon();
+            return admin;
+        }
+
+        private void btnAdminPanel_Click(object sender, EventArgs e)
+        {
+           bool admin = permissions();
+
+            if(admin)
+            {
+                // Open admin panel
             }
             else
             {
+                MessageBox.Show("You don't have permissions to open the Admin Panel");
             }
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            frmLogin loginFrm = new frmLogin();
+            this.Hide();
+            loginFrm.Show();
         }
     }
 }
