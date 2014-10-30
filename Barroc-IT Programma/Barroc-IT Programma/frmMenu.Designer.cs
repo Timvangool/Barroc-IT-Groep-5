@@ -33,6 +33,7 @@
             this.btnAdminPanel = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.lbl_user = new System.Windows.Forms.Label();
+            this.lblMenuVisible = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCustomers
@@ -43,6 +44,7 @@
             this.btnCustomers.TabIndex = 0;
             this.btnCustomers.Text = "Customers";
             this.btnCustomers.UseVisualStyleBackColor = true;
+            this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
             // 
             // btnInvoices
             // 
@@ -83,11 +85,23 @@
             this.lbl_user.Text = "label1";
             this.lbl_user.Visible = false;
             // 
+            // lblMenuVisible
+            // 
+            this.lblMenuVisible.AutoSize = true;
+            this.lblMenuVisible.Location = new System.Drawing.Point(159, 1);
+            this.lblMenuVisible.Name = "lblMenuVisible";
+            this.lblMenuVisible.Size = new System.Drawing.Size(35, 13);
+            this.lblMenuVisible.TabIndex = 6;
+            this.lblMenuVisible.Text = "label1";
+            this.lblMenuVisible.Visible = false;
+            this.lblMenuVisible.TextChanged += new System.EventHandler(this.lblMenuVisible_TextChanged);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(195, 231);
+            this.Controls.Add(this.lblMenuVisible);
             this.Controls.Add(this.lbl_user);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnAdminPanel);
@@ -96,6 +110,7 @@
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMenu_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,5 +123,6 @@
         private System.Windows.Forms.Button btnAdminPanel;
         private System.Windows.Forms.Button btnLogout;
         public System.Windows.Forms.Label lbl_user;
+        public System.Windows.Forms.Label lblMenuVisible;
     }
 }

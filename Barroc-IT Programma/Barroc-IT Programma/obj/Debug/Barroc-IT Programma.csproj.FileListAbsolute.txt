@@ -22,3 +22,4 @@ C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-I
 C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.Properties.Resources.resources
 C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.csproj.GenerateResource.Cache
 C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.Launcher.resources
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmCustomersMenu.resources

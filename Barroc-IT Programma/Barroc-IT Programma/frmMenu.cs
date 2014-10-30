@@ -17,10 +17,13 @@ namespace Barroc_IT_Programma
     public partial class frmMenu : Form
     {
         private DatabaseHandler dbh;
-        public frmMenu()
+        public frmLogin frmloginpanel;
+        public frmMenu(frmLogin login)
         {
             InitializeComponent();
+            frmloginpanel = login;
             dbh = new DatabaseHandler();
+            lblMenuVisible.Visible = false;
         }
         public bool permissions()
         {
@@ -61,9 +64,46 @@ namespace Barroc_IT_Programma
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            frmLogin loginFrm = new frmLogin();
-            this.Hide();
-            loginFrm.Show();
+            
+            frmloginpanel.lblLoginVisible.Text = "Show";
+            lblMenuVisible.Text = "Hide";
+            ToggleForm();
+        }
+
+        private void frmMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+        }
+
+        private void btnCustomers_Click(object sender, EventArgs e)
+        {
+            frmCustomersMenu frmCustomer = new frmCustomersMenu(this, frmloginpanel);
+            frmCustomer.Show();
+            frmCustomer.lblCustomerVisible.Text = "Show";
+            frmCustomer.ToggleForm();
+            this.Opacity = 0;
+            this.ShowInTaskbar = false;
+        }
+
+        public void ToggleForm()
+        {
+            if(lblMenuVisible.Text =="Show")
+            {
+                this.Opacity = 1;
+                this.ShowInTaskbar = true;
+            }
+            else if(lblMenuVisible.Text =="Hide")
+            {
+                dbh.CloseCon();
+                this.Opacity = 0;
+                this.ShowInTaskbar = false;
+            }
+            
+        }
+
+        private void lblMenuVisible_TextChanged(object sender, EventArgs e)
+        {
+            ToggleForm();
         }
     }
 }

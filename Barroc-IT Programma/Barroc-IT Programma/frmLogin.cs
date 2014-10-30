@@ -17,37 +17,25 @@ namespace Barroc_IT_Programma
     public partial class frmLogin : Form
     {
         private DatabaseHandler dbh;
-
-        public frmLogin()
+        public frmMenu frmMenu;
+        public Launcher launcher;
+        public frmLogin(Launcher form)
         {
             InitializeComponent();
+            launcher = form;
             dbh = new DatabaseHandler();
             tbPassword.KeyDown += new KeyEventHandler(tbPassword_KeyDown);
-            tbUsername.KeyDown += new KeyEventHandler(tbUsername_KeyDown);
+            frmMenu = new frmMenu(this);
+            frmMenu.Show();
+            frmMenu.Opacity = 0;
+            frmMenu.ShowInTaskbar = false;
+            frmMenu.Enabled = false;
+            lblLoginVisible.Visible = false;
         }
-
-        //private bool ExitProgram()
-        //{
-        //    bool close = false;
-        //    DialogResult result = MessageBox.Show("Are you sure you want to quit?", "Quit", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-        //    if (result.Equals(DialogResult.OK))
-        //    {
-        //        if (dbh.Getcon().State == ConnectionState.Open)
-        //        {
-        //            dbh.CloseCon();
-        //        }
-        //        close = true;
-        //    }
-        //    else
-        //    {
-        //        close = false;
-        //    }
-        //    return close;
-        //}
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-                Application.Exit();
+            this.Close();
         }
 
         private void Login()
@@ -64,9 +52,8 @@ namespace Barroc_IT_Programma
             {
                 if (CheckLogin(tbUsername.Text, tbPassword.Text))
                 {
-                    frmMenu frmmenu = new frmMenu();
-                    frmmenu.lbl_user.Text = tbUsername.Text;
-                    frmmenu.Show();
+                    frmMenu.lbl_user.Text = tbUsername.Text;
+                    MenuShow();
                     this.Opacity = 0;
                     this.ShowInTaskbar = false;
                     this.Enabled = false;
@@ -76,6 +63,14 @@ namespace Barroc_IT_Programma
                     MessageBox.Show("Your Username and Password does not match. Contact the program manager.");
                 }
             }
+        }
+
+        public void MenuShow()
+        {
+            lblLoginVisible.Text = "Hide";
+            frmMenu.Opacity = 1;
+            frmMenu.ShowInTaskbar = true;
+            frmMenu.Enabled = true;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -106,33 +101,41 @@ namespace Barroc_IT_Programma
             return loginSuccessful;
         }
 
-        //private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
-        //{
-        //    if(!ExitProgram())
-        //    {
-        //        e.Cancel = true;
-        //    }
-        //    else
-        //    {
-        //        e.Cancel = false;
-        //    }
-        //}
-
         void tbPassword_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
                 Login();
         }
 
-        void tbUsername_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-                tbPassword.Focus();
-        }
-
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
-        } 
+            DialogResult result = MessageBox.Show("Are you sure you want to quit?", "Quit", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (result.Equals(DialogResult.OK))
+                launcher.ExitProgram();
+            else
+                e.Cancel = true;
+        }
+
+        public void ToggleForm()
+        {
+            if (lblLoginVisible.Text == "Show")
+            {
+                this.Opacity = 1;
+                this.ShowInTaskbar = true;
+                this.Enabled = true;
+            }
+            else if (lblLoginVisible.Text == "Hide")
+            {
+                this.Opacity = 0;
+                this.ShowInTaskbar = false;
+                this.Enabled = false;
+            }
+
+        }
+
+        private void lblVisible_TextChanged(object sender, EventArgs e)
+        {
+            ToggleForm();
+        }
     }
 }

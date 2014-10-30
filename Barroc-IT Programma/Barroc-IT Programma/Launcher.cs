@@ -12,41 +12,22 @@ namespace Barroc_IT_Programma
 {
     public partial class Launcher : Form
     {
+        public frmLogin frmLoginPanel;
+        DatabaseHandler dhb;
         public Launcher()
         {
             InitializeComponent();
-            
-            frmLogin frmlogin = new frmLogin();
-            frmlogin.Show();
+            dhb = new DatabaseHandler();
+            frmLoginPanel = new frmLogin(this);
+            frmLoginPanel.Show();
             this.Opacity = 0;
             this.ShowInTaskbar = false;
         }
 
-        private void Launcher_FormClosing(object sender, FormClosingEventArgs e)
+        public void ExitProgram()
         {
-            if (!ExitProgram())
-            {
-                this.Close();
-            }
-            else
-            {
-                e.Cancel = false;
-            }
-        }
-
-        private bool ExitProgram()
-        {
-            bool close = false;
-            DialogResult result = MessageBox.Show("Are you sure you want to quit?", "Quit", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-            if (result.Equals(DialogResult.OK))
-            {
-                close = true;
-            }
-            else
-            {
-                close = false;
-            }
-            return close;
+            dhb.CloseCon();
+            this.Close();
         }
     }
 }
