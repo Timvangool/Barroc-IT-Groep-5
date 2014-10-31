@@ -9,3 +9,6 @@ Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programm
 Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT.mdf
 Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT_log.ldf
 Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmMenu.resources
+C:\Users\Geert\Documents\GitHub\Barroc-IT-Groep-5\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.exe.config
+C:\Users\Geert\Documents\GitHub\Barroc-IT-Groep-5\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.exe
+C:\Users\Geert\Documents\GitHub\Barroc-IT-Groep-5\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.pdb
