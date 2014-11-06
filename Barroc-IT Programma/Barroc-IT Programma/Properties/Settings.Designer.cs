@@ -33,5 +33,7 @@ namespace Barroc_IT_Programma.Properties {
                 return ((string)(this["Barroc_ITConnectionString"]));
             }
         }
+
+        public string DataConnectionString { get; set; }
     }
 }

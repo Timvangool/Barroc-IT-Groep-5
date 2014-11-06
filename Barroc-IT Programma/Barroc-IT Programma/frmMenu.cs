@@ -18,6 +18,7 @@ namespace Barroc_IT_Programma
     {
         private DatabaseHandler dbh;
         public frmLogin frmloginpanel;
+        public frmInvoices frminvoices;
         public frmMenu(frmLogin login)
         {
             InitializeComponent();
@@ -91,6 +92,7 @@ namespace Barroc_IT_Programma
             {
                 this.Opacity = 1;
                 this.ShowInTaskbar = true;
+                this.Enabled = true;
             }
             else if(lblMenuVisible.Text =="Hide")
             {
@@ -104,6 +106,15 @@ namespace Barroc_IT_Programma
         private void lblMenuVisible_TextChanged(object sender, EventArgs e)
         {
             ToggleForm();
+        }
+
+        private void btnInvoices_Click(object sender, EventArgs e)
+        {
+            frminvoices = new frmInvoices(frmloginpanel, this);
+            frminvoices.Show();
+            this.Opacity = 0;
+            this.ShowInTaskbar = false;
+            this.Enabled = false;
         }
     }
 }
