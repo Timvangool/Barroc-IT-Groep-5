@@ -1,0 +1,59 @@
+q:\documenten\visual studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.exe.config
+q:\documenten\visual studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.Properties.Resources.resources
+q:\documenten\visual studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.csproj.GenerateResource.Cache
+q:\documenten\visual studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.exe
+q:\documenten\visual studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.pdb
+q:\documenten\visual studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.exe
+q:\documenten\visual studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.pdb
+Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmLogin.resources
+Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT.mdf
+Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT_log.ldf
+Q:\Documenten\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmMenu.resources
+C:\Users\Geert\Documents\GitHub\Barroc-IT-Groep-5\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.exe.config
+C:\Users\Geert\Documents\GitHub\Barroc-IT-Groep-5\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.exe
+C:\Users\Geert\Documents\GitHub\Barroc-IT-Groep-5\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.pdb
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.exe.config
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.exe
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.pdb
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT.mdf
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT_log.ldf
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.exe
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.pdb
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.csprojResolveAssemblyReference.cache
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmLogin.resources
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmMenu.resources
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.Properties.Resources.resources
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.csproj.GenerateResource.Cache
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.Launcher.resources
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmCustomersMenu.resources
+C:\Users\timmie\Desktop\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.exe.config
+C:\Users\timmie\Desktop\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.exe
+C:\Users\timmie\Desktop\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.pdb
+C:\Users\timmie\Desktop\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT.mdf
+C:\Users\timmie\Desktop\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT_log.ldf
+C:\Users\timmie\Desktop\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.exe
+C:\Users\timmie\Desktop\Barroc-IT Programma\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.pdb
+C:\Users\timmie\Desktop\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmCustomersMenu.resources
+C:\Users\timmie\Desktop\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmLogin.resources
+C:\Users\timmie\Desktop\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmMenu.resources
+C:\Users\timmie\Desktop\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.Launcher.resources
+C:\Users\timmie\Desktop\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.Properties.Resources.resources
+C:\Users\timmie\Desktop\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.csproj.GenerateResource.Cache
+C:\Users\timmie\Desktop\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmInvoices.resources
+C:\Users\timmie\Desktop\Barroc-IT Programma\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.csprojResolveAssemblyReference.cache
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma work everything\Barroc-IT Programma\bin\Debug\Barroc-IT.mdf
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma work everything\Barroc-IT Programma\bin\Debug\Barroc-IT_log.ldf
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma work everything\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.exe.config
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma work everything\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.exe
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma work everything\Barroc-IT Programma\bin\Debug\Barroc-IT Programma.pdb
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma work everything\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmCustomersMenu.resources
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma work everything\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmEditBasicCustomer.resources
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma work everything\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmLogin.resources
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma work everything\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmMenu.resources
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma work everything\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.Launcher.resources
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma work everything\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.Properties.Resources.resources
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma work everything\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.csproj.GenerateResource.Cache
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma work everything\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.exe
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma work everything\Barroc-IT Programma\obj\Debug\Barroc-IT Programma.pdb
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma work everything\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmAddInvoice.resources
+C:\Users\sven\Documents\Visual Studio 2013\Projects\Barroc-IT Programma work everything\Barroc-IT Programma\obj\Debug\Barroc_IT_Programma.frmInvoices.resources
