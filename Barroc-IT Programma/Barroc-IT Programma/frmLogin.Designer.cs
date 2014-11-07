@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.tbPassword = new System.Windows.Forms.TextBox();
@@ -35,11 +36,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblLoginVisible = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(12, 86);
+            this.btnLogin.Location = new System.Drawing.Point(359, 172);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 3;
@@ -49,7 +52,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(128, 86);
+            this.btnExit.Location = new System.Drawing.Point(475, 172);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 4;
@@ -59,14 +62,14 @@
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(76, 50);
+            this.tbPassword.Location = new System.Drawing.Point(423, 88);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(127, 20);
             this.tbPassword.TabIndex = 2;
             // 
             // tbUsername
             // 
-            this.tbUsername.Location = new System.Drawing.Point(76, 13);
+            this.tbUsername.Location = new System.Drawing.Point(423, 62);
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(127, 20);
             this.tbUsername.TabIndex = 1;
@@ -74,7 +77,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 17);
+            this.label1.Location = new System.Drawing.Point(359, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 0;
@@ -83,7 +86,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 53);
+            this.label2.Location = new System.Drawing.Point(359, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 0;
@@ -92,18 +95,29 @@
             // lblLoginVisible
             // 
             this.lblLoginVisible.AutoSize = true;
-            this.lblLoginVisible.Location = new System.Drawing.Point(9, 4);
+            this.lblLoginVisible.Location = new System.Drawing.Point(356, 2);
             this.lblLoginVisible.Name = "lblLoginVisible";
             this.lblLoginVisible.Size = new System.Drawing.Size(29, 13);
             this.lblLoginVisible.TabIndex = 0;
             this.lblLoginVisible.Text = "Hide";
             this.lblLoginVisible.TextChanged += new System.EventHandler(this.lblVisible_TextChanged);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(338, 183);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(215, 120);
+            this.ClientSize = new System.Drawing.Size(557, 208);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbUsername);
             this.Controls.Add(this.lblLoginVisible);
@@ -115,6 +129,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLogin_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,6 +144,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label lblLoginVisible;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

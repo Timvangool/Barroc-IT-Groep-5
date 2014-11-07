@@ -55,20 +55,21 @@ namespace Barroc_IT_Programma
             }
             else
             {
-                frmShowInvoices.Height = 500;
-                frmShowInvoices.Width = 600;
+                frmShowInvoices.Height = 350;
+                frmShowInvoices.Width = 500;
                 frmShowInvoices.Text = "Invoices.";
+                frmShowInvoices.FormClosing += new FormClosingEventHandler(frmShowInvoices_FormClosing);
                 frmShowInvoices.Show();
 
                 dgvInvoices.Height = 200;
                 dgvInvoices.Width = 450;
-                dgvInvoices.Location = new Point(50, 150);
+                dgvInvoices.Location = new Point(20, 50);
                 frmShowInvoices.Controls.Add(dgvInvoices);
 
                 btnCancel.Width = 75;
                 btnCancel.Height = 23;
-                btnCancel.Text = "Cancel";
-                btnCancel.Location = new Point(40, 50);
+                btnCancel.Text = "Close";
+                btnCancel.Location = new Point(20, 255);
                 btnCancel.Click += new EventHandler(btnCancel_Click);
                 frmShowInvoices.Controls.Add(btnCancel);
 
@@ -78,7 +79,6 @@ namespace Barroc_IT_Programma
                 lbShowHide.Text = "Show"; 
                 LoadDgv(dgvInvoices);
             }
-
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -120,6 +120,12 @@ namespace Barroc_IT_Programma
         private void frmInvoices_FormClosing_1(object sender, FormClosingEventArgs e)
         {
             MessageBox.Show("Please go back and log-out first before you close the program");
+            e.Cancel = true;
+        }
+
+        private void frmShowInvoices_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            MessageBox.Show("Please use the 'Close' button to exit this window.");
             e.Cancel = true;
         }
     }

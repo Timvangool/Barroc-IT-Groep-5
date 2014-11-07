@@ -33,6 +33,7 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.lblCustomerVisible = new System.Windows.Forms.Label();
+            this.btnShowCustomer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAddCustomer
@@ -46,7 +47,7 @@
             // 
             // btnEditCustomer
             // 
-            this.btnEditCustomer.Location = new System.Drawing.Point(11, 96);
+            this.btnEditCustomer.Location = new System.Drawing.Point(11, 80);
             this.btnEditCustomer.Name = "btnEditCustomer";
             this.btnEditCustomer.Size = new System.Drawing.Size(231, 62);
             this.btnEditCustomer.TabIndex = 2;
@@ -55,7 +56,7 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(157, 182);
+            this.btnLogout.Location = new System.Drawing.Point(158, 224);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(85, 37);
             this.btnLogout.TabIndex = 5;
@@ -65,7 +66,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(12, 182);
+            this.btnBack.Location = new System.Drawing.Point(12, 224);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(85, 37);
             this.btnBack.TabIndex = 6;
@@ -84,11 +85,22 @@
             this.lblCustomerVisible.Visible = false;
             this.lblCustomerVisible.TextChanged += new System.EventHandler(this.lblCustomerVisible_TextChanged);
             // 
+            // btnShowCustomer
+            // 
+            this.btnShowCustomer.Location = new System.Drawing.Point(12, 148);
+            this.btnShowCustomer.Name = "btnShowCustomer";
+            this.btnShowCustomer.Size = new System.Drawing.Size(231, 62);
+            this.btnShowCustomer.TabIndex = 8;
+            this.btnShowCustomer.Text = "Show Customer";
+            this.btnShowCustomer.UseVisualStyleBackColor = true;
+            this.btnShowCustomer.Click += new System.EventHandler(this.btnShowCustomer_Click);
+            // 
             // frmCustomersMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(254, 231);
+            this.ClientSize = new System.Drawing.Size(254, 273);
+            this.Controls.Add(this.btnShowCustomer);
             this.Controls.Add(this.lblCustomerVisible);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnLogout);
@@ -110,6 +122,7 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnBack;
         public System.Windows.Forms.Label lblCustomerVisible;
+        private System.Windows.Forms.Button btnShowCustomer;
 
     }
 }

@@ -37,9 +37,9 @@
             // 
             // btnShowInvoices
             // 
-            this.btnShowInvoices.Location = new System.Drawing.Point(69, 76);
+            this.btnShowInvoices.Location = new System.Drawing.Point(12, 148);
             this.btnShowInvoices.Name = "btnShowInvoices";
-            this.btnShowInvoices.Size = new System.Drawing.Size(106, 58);
+            this.btnShowInvoices.Size = new System.Drawing.Size(230, 62);
             this.btnShowInvoices.TabIndex = 0;
             this.btnShowInvoices.Text = "Show invoices";
             this.btnShowInvoices.UseVisualStyleBackColor = true;
@@ -49,23 +49,23 @@
             // 
             this.btnAddInvoices.Location = new System.Drawing.Point(12, 12);
             this.btnAddInvoices.Name = "btnAddInvoices";
-            this.btnAddInvoices.Size = new System.Drawing.Size(106, 58);
+            this.btnAddInvoices.Size = new System.Drawing.Size(230, 62);
             this.btnAddInvoices.TabIndex = 1;
             this.btnAddInvoices.Text = "Add invoices";
             this.btnAddInvoices.UseVisualStyleBackColor = true;
             // 
             // btnEditInvoices
             // 
-            this.btnEditInvoices.Location = new System.Drawing.Point(124, 12);
+            this.btnEditInvoices.Location = new System.Drawing.Point(12, 80);
             this.btnEditInvoices.Name = "btnEditInvoices";
-            this.btnEditInvoices.Size = new System.Drawing.Size(106, 58);
+            this.btnEditInvoices.Size = new System.Drawing.Size(230, 62);
             this.btnEditInvoices.TabIndex = 2;
             this.btnEditInvoices.Text = "Edit invoices";
             this.btnEditInvoices.UseVisualStyleBackColor = true;
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(154, 140);
+            this.btnLogout.Location = new System.Drawing.Point(167, 224);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(75, 23);
             this.btnLogout.TabIndex = 3;
@@ -75,7 +75,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(12, 140);
+            this.btnBack.Location = new System.Drawing.Point(12, 224);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 23);
             this.btnBack.TabIndex = 4;
@@ -87,13 +87,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(241, 170);
+            this.ClientSize = new System.Drawing.Size(254, 257);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnEditInvoices);
             this.Controls.Add(this.btnAddInvoices);
             this.Controls.Add(this.btnShowInvoices);
             this.Name = "frmInvoices";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Invoices";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmInvoices_FormClosing_1);
             this.ResumeLayout(false);
