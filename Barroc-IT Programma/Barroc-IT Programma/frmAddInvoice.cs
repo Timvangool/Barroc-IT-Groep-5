@@ -26,25 +26,30 @@ namespace Barroc_IT_Programma
         Button btnAdd;
         List<string> columns;
         List<string> values;
-        int y = 15;
+        int y = 55;
         int x = 15;
+        int[] customerId;
+        int custID;
 
         public frmAddInvoice()
         {
             InitializeComponent();
-            DBConnect();
-
-            SqlDataReader sqlDR = sqlCmd.ExecuteReader();
-            columns = new List<string>();
-            for (int i = 1; i < sqlDR.FieldCount; i++)
-            {
-                columns.Add(sqlDR.GetName(i));
-            }
-            sqlDR.Close();
-
             CreateLayout();
         }
 
+        private void btnSelect_Click(object sender, EventArgs e)
+        {
+            dbh.CloseCon();
+            custID = cmbBox.SelectedIndex + 1;
+            if (custID == 0)
+            {
+                MessageBox.Show("Please select a customer");
+            }
+            else
+            {
+                InvoiceLayout();
+            }
+        }
         private void btnAdd_Click(object sender, EventArgs e)
         {
             bool isEmpty = false;
@@ -62,11 +67,9 @@ namespace Barroc_IT_Programma
             if (isEmpty)
             {
             }
-
             else
             {
                 ConvertValues();
-
                 try
                 {
                     SqlCommand cmd = new SqlCommand();
@@ -114,14 +117,20 @@ namespace Barroc_IT_Programma
                     txtbInfo[i].ShortcutsEnabled = false;
                     txtbInfo[i].KeyPress += new KeyPressEventHandler(intBox_KeyPress);
                 }
+
+                if (lblInfo[i].Text.Contains("Id"))
+                {
+                    txtbInfo[i].Text = custID.ToString();
+                    txtbInfo[i].ReadOnly = true;
+                }
             }
         }
-        private void DBConnect()
+        private void DBConnect(string cmd)
         {
             try
             {
                 dbh.OpenCon();
-                sqlCmd = new SqlCommand("Select top 1* from Tbl_Invoices", dbh.Getcon());
+                sqlCmd = new SqlCommand(cmd, dbh.Getcon());
             }
             catch (Exception e)
             {
@@ -130,12 +139,49 @@ namespace Barroc_IT_Programma
                 Environment.Exit(0);
             }
         }
+        private void FillColumns()
+        {
+            SqlDataReader sqlDR = sqlCmd.ExecuteReader();
+            columns = new List<string>();
+            for (int i = 1; i < sqlDR.FieldCount; i++)
+            {
+                columns.Add(sqlDR.GetName(i));
+            }
+            sqlDR.Close();
+        }
         private void CreateLayout()
         {
+            cmbBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            customerId = new int[255];
+            DBConnect("SELECT Company_Id, Company_Name from Tbl_Customer");
+            using (SqlDataReader cmbDR = sqlCmd.ExecuteReader())
+            {
+                int i = 0;
+                while (cmbDR.Read())
+                {
+                    cmbBox.Items.Add(cmbDR.GetString(1));
+                    customerId[i] = cmbDR.GetInt32(0);
+                    i++;
+                }
+            }
+        }
+        private void InvoiceLayout()
+        {
+            DBConnect("SELECT * FROM Tbl_Invoices Where Customer_ID = " + custID);
+            FillColumns();
+
             lblInfo = new Label[columns.Count];
             txtbInfo = new TextBox[columns.Count];
             for (int i = 0; i < lblInfo.Length; i++)
             {
+                if (y >= 100)
+                {
+                    x += 250;
+                    y = 85;
+                }
+                else
+                { y += 30; }
+
                 lblInfo[i] = new Label();
                 lblInfo[i].Text = columns[i].ToString();
                 if (lblInfo[i].Text.Contains("BTW"))
@@ -149,21 +195,12 @@ namespace Barroc_IT_Programma
                 txtbInfo[i].Name = columns[i].ToString();
                 txtbInfo[i].Location = new Point((x + 100), y);
                 this.Controls.Add(txtbInfo[i]);
-
-                if (y >= 400)
-                {
-                    x += 250;
-                    y = 15;
-                }
-                else
-                { y += 30; }
-
             }
             txtLimit();
 
             btnAdd = new Button();
             btnAdd.Text = "Add";
-            btnAdd.Location = new Point((x + 100), y);
+            btnAdd.Location = new Point((x + 100), y += 30);
             this.Controls.Add(btnAdd);
             this.AcceptButton = btnAdd;
             btnAdd.Click += new EventHandler(btnAdd_Click);
