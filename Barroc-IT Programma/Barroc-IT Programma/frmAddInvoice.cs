@@ -80,7 +80,10 @@ namespace Barroc_IT_Programma
                     cmd.ExecuteNonQuery();
                     for (int i = 0; i < columns.Count; i++)
                     {
-                        txtbInfo[i].ResetText();
+                        if (lblInfo[i].Text.Contains("Invoice"))
+                        {
+                            txtbInfo[i].ResetText();
+                        }
                     }
                     MessageBox.Show("Invoice succesfully added");
                 }
@@ -91,6 +94,13 @@ namespace Barroc_IT_Programma
             }
         }
 
+        private void txtBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '\'')
+            {
+                e.Handled = true;
+            }
+        }
         private void intBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) || IsInputKey(Keys.Back))
@@ -110,6 +120,7 @@ namespace Barroc_IT_Programma
                 else
                 {
                     txtbInfo[i].MaxLength = 255;
+                    txtbInfo[i].KeyPress += new KeyPressEventHandler(txtBox_KeyPress);
                 }
 
                 if (lblInfo[i].Text.Contains("Code"))
